@@ -1,0 +1,86 @@
+<div class="game-window" ng-repeat="game in $ctrl.games">
+    <div class="game-widget">
+        <div class="game-widget-header">
+            <!--<GameTimer game_info={game_info} index={index} />-->
+            <div class="game-widget-bkg"></div>
+            <div class="game-time-left-wrapper">
+              <div class="game-time-left"></div>
+              <div class="half-value"></div>
+              <div class="game-time-bkg"></div>
+            </div>
+        </div>
+        <div class="game-widget-content">
+          <!--<HomeTeamInfo game_info={game_info} index={index} />
+          <AwayTeamInfo game_info={game_info} index={index} />-->
+          <div class="home-team score-widget-bkg">
+            <div class="home-team-logo">
+                <img ng-src="images/team_logos/{{game.home_team.toLowerCase().replace(' ', '').replace('.', '')}}_sm_big.png" />
+            </div>
+            <div class="home-team-name">{{game.home_team}}</div>
+            <div class="clock">
+              <div class="digit home-digits score_0">
+                <div class="segment on"></div>
+                <div class="segment on"></div>
+                <div class="segment on"></div>
+                <div class="segment on"></div>
+                <div class="segment on"></div>
+                <div class="segment on"></div>
+                <div class="segment"></div>
+              </div>
+
+              <div class="digit home-digits score_0">
+                <div class="segment on"></div>
+                <div class="segment on"></div>
+                <div class="segment on"></div>
+                <div class="segment on"></div>
+                <div class="segment on"></div>
+                <div class="segment on"></div>
+                <div class="segment"></div>
+              </div>
+            </div>
+          </div>
+          <div class="away-team score-widget-bkg">
+            <div class="away-team-logo">
+                <img ng-src="images/team_logos/{{game.away_team.toLowerCase().replace(' ', '').replace('.', '')}}_sm_big.png" />
+            </div>
+            <div class="away-team-name">{{game.away_team}}</div>
+            <div class="clock">
+              <div class="digit away-digits score_0">
+                <div class="segment on"></div>
+                <div class="segment on"></div>
+                <div class="segment on"></div>
+                <div class="segment on"></div>
+                <div class="segment on"></div>
+                <div class="segment on"></div>
+                <div class="segment"></div>
+              </div>
+
+              <div class="digit away-digits score_0">
+                <div class="segment on"></div>
+                <div class="segment on"></div>
+                <div class="segment on"></div>
+                <div class="segment on"></div>
+                <div class="segment on"></div>
+                <div class="segment on"></div>
+                <div class="segment"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="game-widget-footer">
+            <!--<CheersBoosTracker handleBoosClick={that.handleBoosClick} handleCheersClick={that.handleCheersClick} game_info={game_info} index={index} />-->
+            <div class="cheers-icon" onClick="">
+              <img src="img/cheers.png" />
+            </div>
+            <div class="cheers-count"></div>
+            <div class="cheers" style=""></div>
+            <div class="boos-count"></div>
+            <div class="boos-icon" onClick="">
+                <img src="img/boos.png" />
+            </div>
+            <div class="boos" style=""></div>
+            <div class="cheers-label">CHEERS</div>
+            <div class="boos-label">BOOOOS</div>
+        </div>
+    </div>
+</div>
