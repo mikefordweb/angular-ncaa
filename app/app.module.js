@@ -1,7 +1,7 @@
 'use strict';
 
 // Define the `ncaaApp` module
-angular.module('ncaaApp', [
+angular.module('ncaaGameApp', [
   // ...which depends on the `gameList` module
-  'gameList'
+  'ncaaGameList'
 ]);

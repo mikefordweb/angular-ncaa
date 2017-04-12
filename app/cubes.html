@@ -2,13 +2,24 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Cubes</title>
+    <title>NCAA Men's Basketball Scores</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <!--<link rel="stylesheet" href="css/main.css">-->
+    <link rel="stylesheet" href="css/ncaa-demo.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="app.module.js"></script>
+    <script src="game-list/game-list.module.js"></script>
+    <script src="game-list/game-list.component.js"></script>
+
     <style>
     body {
       font-family: 'Helvetica Neue', Arial, sans-serif;
       padding: 10px;
       /*background: #0055a6;*/
-      background-color: #333333;
+      background-color: #000;
   }
     .container {
       width: 300px;
@@ -21,8 +32,8 @@
          -moz-perspective: 1200px;
            -o-perspective: 1200px;
               perspective: 1200px;
-      margin-right: 30px;
-      margin-bottom: 30px;
+      margin-right: 36px;
+      margin-bottom: 36px;
     }
 
     .box {
@@ -74,8 +85,8 @@
       /*background: #0055a6;*/
       background-color: #666666; 
     }
-    .box .right  { background: #999; }
-    .box .bottom { background: #999; }
+    .box .right  { background: #666666; }
+    .box .bottom { background: #666666; }
 
     .box .front  {
       -webkit-transform: translateZ( 50px );
@@ -400,8 +411,6 @@
       height: 33px;
       position: relative;
       display: inline-block;
-      border: 0px solid #fff;
-      margin-right: 14px;
     }
 
     .digit .segment {
@@ -526,6 +535,10 @@
       display: inline-block;
       margin-left: 1px;
       vertical-align: bottom;
+    }
+
+    .away-team-mascot {
+      font-size: 11px;
     }
 
     </style>
@@ -661,10 +674,11 @@
               <div class="graph-bar"></div>
             </div>
           </div>
-          <div class="game-time">20:00 2h</div>
+          <!--<div class="game-time">20:00 2h</div>-->
           <div class="away-team team-section depaul-bkg">
           <img src="images/team_logos/depaul_big.png" class="home-team-logo" />
             <div class="away-team-text">DePaul</div>
+            <div class="away-team-mascot">Blue Demons</div>
             <div class="away-score game-score">
               <div class="digit home-digits score_0" data-value="9">
                 <div class="segment on"></div>
@@ -711,7 +725,7 @@
             </div>
           </div>
           <div class="game-last-play">
-            12:47 - S.Hauser makes a 3pt basket from 26 ft out
+            12:47 - Sam Hauser makes a 3pt basket
           </div>
         </figure>
         <figure class="right"></figure>
@@ -847,7 +861,7 @@
               <div class="graph-bar"></div>
             </div>
           </div>
-          <div class="game-time">20:00 2h</div>
+          <!--<div class="game-time">20:00 2h</div>-->
           <div class="away-team team-section villanova-bkg">
           <img src="images/team_logos/villanova_big.png" class="home-team-logo" />
             <div class="away-team-text">Villanova</div>
@@ -897,7 +911,7 @@
             </div>
           </div>
           <div class="game-last-play">
-            12:47 - S.Hauser makes a 3pt basket from 26 ft out
+            12:47 - Sam Hauser makes a 3pt basket
           </div>
         </figure>
         <figure class="right"></figure>
@@ -1033,7 +1047,7 @@
               <div class="graph-bar"></div>
             </div>
           </div>
-          <div class="game-time">20:00 2h</div>
+          <!--<div class="game-time">20:00 2h</div>-->
           <div class="away-team team-section creighton-bkg">
           <img src="images/team_logos/creighton_big.png" class="home-team-logo" />
             <div class="away-team-text">Creighton</div>
@@ -1083,7 +1097,7 @@
             </div>
           </div>
           <div class="game-last-play">
-            12:47 - S.Hauser makes a 3pt basket from 26 ft out
+            12:47 - Sam Hauser makes a 3pt basket
           </div>
         </figure>
         <figure class="right"></figure>
@@ -1219,7 +1233,7 @@
               <div class="graph-bar"></div>
             </div>
           </div>
-          <div class="game-time">20:00 2h</div>
+          <!--<div class="game-time">20:00 2h</div>-->
           <div class="away-team team-section dayton-bkg">
           <img src="images/team_logos/dayton_big.png" class="home-team-logo" />
             <div class="away-team-text">Dayton</div>
@@ -1269,7 +1283,7 @@
             </div>
           </div>
           <div class="game-last-play">
-            12:47 - S.Hauser makes a 3pt basket from 26 ft out
+            12:47 - Sam Hauser makes a 3pt basket
           </div>
         </figure>
         <figure class="right"></figure>
@@ -1405,7 +1419,7 @@
               <div class="graph-bar"></div>
             </div>
           </div>
-          <div class="game-time">20:00 2h</div>
+          <!--<div class="game-time">20:00 2h</div>-->
           <div class="away-team team-section ballstate-bkg">
           <img src="images/team_logos/ballstate_big.png" class="home-team-logo" />
             <div class="away-team-text">Ball State</div>
@@ -1455,7 +1469,7 @@
             </div>
           </div>
           <div class="game-last-play">
-            12:47 - S.Hauser makes a 3pt basket from 26 ft out
+            12:47 - Sam Hauser makes a 3pt basket
           </div>
         </figure>
         <figure class="right"></figure>
@@ -1591,7 +1605,7 @@
               <div class="graph-bar"></div>
             </div>
           </div>
-          <div class="game-time">20:00 2h</div>
+          <!--<div class="game-time">20:00 2h</div>-->
           <div class="away-team team-section cincinnati-bkg">
           <img src="images/team_logos/cincinnati_big.png" class="home-team-logo" />
             <div class="away-team-text">Cincinnati</div>
@@ -1641,7 +1655,7 @@
             </div>
           </div>
           <div class="game-last-play">
-            12:47 - S.Hauser makes a 3pt basket from 26 ft out
+            12:47 - Sam Hauser makes a 3pt basket
           </div>
         </figure>
         <figure class="right"></figure>
@@ -1777,7 +1791,7 @@
               <div class="graph-bar"></div>
             </div>
           </div>
-          <div class="game-time">20:00 2h</div>
+          <!--<div class="game-time">20:00 2h</div>-->
           <div class="away-team team-section providence-bkg">
           <img src="images/team_logos/providence_big.png" class="home-team-logo" />
             <div class="away-team-text">Providence</div>
@@ -1827,7 +1841,7 @@
             </div>
           </div>
           <div class="game-last-play">
-            12:47 - S.Hauser makes a 3pt basket from 26 ft out
+            12:47 - Sam Hauser makes a 3pt basket
           </div>
         </figure>
         <figure class="right"></figure>
@@ -1963,7 +1977,7 @@
               <div class="graph-bar"></div>
             </div>
           </div>
-          <div class="game-time">20:00 2h</div>
+          <!--<div class="game-time">20:00 2h</div>-->
           <div class="away-team team-section stjohns-bkg">
           <img src="images/team_logos/stjohns_big.png" class="home-team-logo" />
             <div class="away-team-text">St John's</div>
@@ -2013,7 +2027,7 @@
             </div>
           </div>
           <div class="game-last-play">
-            12:47 - S.Hauser makes a 3pt basket from 26 ft out
+            12:47 - Sam Hauser makes a 3pt basket
           </div>
         </figure>
         <figure class="right"></figure>
@@ -2149,7 +2163,7 @@
               <div class="graph-bar"></div>
             </div>
           </div>
-          <div class="game-time">20:00 2h</div>
+          <!--<div class="game-time">20:00 2h</div>-->
           <div class="away-team team-section toledo-bkg">
           <img src="images/team_logos/toledo_big.png" class="home-team-logo" />
             <div class="away-team-text">Toledo</div>
@@ -2199,7 +2213,7 @@
             </div>
           </div>
           <div class="game-last-play">
-            12:47 - S.Hauser makes a 3pt basket from 26 ft out
+            12:47 - Sam Hauser makes a 3pt basket
           </div>
         </figure>
         <figure class="right"></figure>

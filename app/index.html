@@ -1,13 +1,9 @@
 <!doctype html>
-<html lang="en" ng-app="ncaaApp">
+<html lang="en" ng-app="ncaaGameApp">
   <head>
     <meta charset="utf-8">
     <title>NCAA Men's Basketball Scores</title>
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
-    <link rel="stylesheet" href="app.css" />
-    <link rel="stylesheet" href="css/normalize.css">
-    <!--<link rel="stylesheet" href="css/main.css">-->
-    <link rel="stylesheet" href="css/ncaa-demo.css">
+    <link rel="stylesheet" href="css/ncaa-app.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <script src="bower_components/angular/angular.js"></script>
     <script src="app.module.js"></script>
@@ -21,69 +17,9 @@
   - all tourney games in a full screen grid of 3d cubes w/ scores in each, with team colors in gradients on sides of cube
 -->
 
-<body class="body-bkg-grey">
-
-  <div class="main-content">
-      <div class="main-title">NCAA College Basketball Scores</div>
-      <div class="game-select-wrapper" id="game-select-wrapper">
-
-        <div class="inner-game-bkg main-container-bkg"></div>
-        <div class="swap-content">
-          <label for="swap-git-header">Git Repo:</label>
-          <div class="swap-git-header">http://www.github.com/mikefordweb</div>
-
-          <div class="swap-section">
-            <div class="swap-header">Select a Framework</div>
-              <div class="swap-items">
-                <div class="swap-item">
-                  <div class="swap-item-inner-header">React</div>
-                  <img class="swap-item-img" id="react-img" src="img/React.js_logo.svg.png"></img>
-                </div>
-                <div class="swap-item">
-                  <div class="swap-item-inner-header">Angular</div>
-                  <img class="swap-item-img" id="angular-img" src="img/angular.png"></img>
-                </div>
-              </div>
-          </div>
-          <div class="swap-section">
-            <div class="swap-header">Select a JS version</div>
-              <div class="swap-items">
-                <div class="swap-item es-item">
-                  <div class="es-inner">ES5</div>
-                </div>
-                <div class="swap-item es-item">
-                  <div class="es-inner">ES6</div>
-                </div>
-              </div>
-          </div>
-          <div class="swap-section">
-            <div class="swap-header">Select a JS Design Pattern</div>
-              <div class="swap-items">
-                <div class="swap-item js-pattern">
-                  <div class="js-pattern-inner">Module</div>
-                </div>
-                <div class="swap-item js-pattern">
-                  <div class="js-pattern-inner">Revealing Module</div>
-                </div>
-              </div>
-              <div class="swap-items">
-                <div class="swap-item js-pattern">
-                  <div class="js-pattern-inner">Prototype</div>
-                </div>
-                <div class="swap-item js-pattern">
-                  <div class="js-pattern-inner">Observer</div>
-                </div>
-              </div>
-          </div>
-        </div>
-        <div class="game-wrapper">
-          <game-list></game-list>
-        </div>
-
-      <!-- Use a custom component to render a list of phones -->
-      <!--<phone-list></phone-list>-->
-
-      </div>
+  <body>
+  <div class="containers-wrapper">
+     <ncaa-game-list></ncaa-game-list>
   </div>
 
   </body>

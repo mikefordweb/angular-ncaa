@@ -3,6 +3,26 @@
 		{
 			"home_team": "Marquette",
 			"home_players":
+			{
+				"player1":"Markus Howard",
+				"player2":"Katin Reinhardt",
+				"player3":"Jajuan Johnson",
+				"player4":"Sam Hauser",
+				"player5":"Luke Fischer"
+			},
+			"away_team": "DePaul",
+			"away_players":
+			{
+				"player1":"Billy Garrett",
+				"player2":"Eli Cain",
+				"player3":"Brandon Cyrus",
+				"player4":"Joe Hanel",
+				"player5":"Chris Harrison-Docks"
+			}
+		},
+		{
+			"home_team": "Georgetown",
+			"home_players":
 				{
 					"player1":"Markus Howard",
 					"player2":"Katin Reinhardt",
@@ -11,7 +31,7 @@
 					"player5":"Luke Fischer"
 				}
 			,
-			"away_team": "DePaul",
+			"away_team": "Villanova",
 			"away_players":
 				{
 					"player1":"Billy Garrett",
@@ -22,36 +42,147 @@
 				}
 		},
 		{
-			"home_team": "Georgetown",
-			"away_team": "Villanova"
-		},
-		{
 			"home_team": "Butler",
-			"away_team": "Creighton"
+			"home_players":
+				{
+					"player1":"Markus Howard",
+					"player2":"Katin Reinhardt",
+					"player3":"Jajuan Johnson",
+					"player4":"Sam Hauser",
+					"player5":"Luke Fischer"
+				}
+			,
+			"away_team": "Creighton",
+			"away_players":
+				{
+					"player1":"Billy Garrett",
+					"player2":"Eli Cain",
+					"player3":"Brandon Cyrus",
+					"player4":"Joe Hanel",
+					"player5":"Chris Harrison-Docks"
+				}
 		},
 		{
 			"home_team": "Xavier",
-			"away_team": "Dayton"
+			"home_players":
+				{
+					"player1":"Markus Howard",
+					"player2":"Katin Reinhardt",
+					"player3":"Jajuan Johnson",
+					"player4":"Sam Hauser",
+					"player5":"Luke Fischer"
+				}
+			,
+			"away_team": "Dayton",
+			"away_players":
+				{
+					"player1":"Billy Garrett",
+					"player2":"Eli Cain",
+					"player3":"Brandon Cyrus",
+					"player4":"Joe Hanel",
+					"player5":"Chris Harrison-Docks"
+				}
 		},
 		{
 			"home_team": "Ball State",
-			"away_team": "Charlotte"
+			"home_players":
+				{
+					"player1":"Markus Howard",
+					"player2":"Katin Reinhardt",
+					"player3":"Jajuan Johnson",
+					"player4":"Sam Hauser",
+					"player5":"Luke Fischer"
+				}
+			,
+			"away_team": "Charlotte",
+			"away_players":
+				{
+					"player1":"Billy Garrett",
+					"player2":"Eli Cain",
+					"player3":"Brandon Cyrus",
+					"player4":"Joe Hanel",
+					"player5":"Chris Harrison-Docks"
+				}
 		},
 		{
 			"home_team": "Illinois",
-			"away_team": "Cincinnati"
+			"home_players":
+				{
+					"player1":"Markus Howard",
+					"player2":"Katin Reinhardt",
+					"player3":"Jajuan Johnson",
+					"player4":"Sam Hauser",
+					"player5":"Luke Fischer"
+				},
+			"away_team": "Cincinnati",
+			"away_players":
+				{
+					"player1":"Billy Garrett",
+					"player2":"Eli Cain",
+					"player3":"Brandon Cyrus",
+					"player4":"Joe Hanel",
+					"player5":"Chris Harrison-Docks"
+				}
 		},
 		{
 			"home_team": "Seton Hall",
-			"away_team": "Providence"
+			"home_players":
+				{
+					"player1":"Markus Howard",
+					"player2":"Katin Reinhardt",
+					"player3":"Jajuan Johnson",
+					"player4":"Sam Hauser",
+					"player5":"Luke Fischer"
+				},
+			"away_team": "Providence",
+			"away_players":
+				{
+					"player1":"Markus Howard",
+					"player2":"Katin Reinhardt",
+					"player3":"Jajuan Johnson",
+					"player4":"Sam Hauser",
+					"player5":"Luke Fischer"
+				}
 		},
 		{
 			"home_team": "St. Johns",
-			"away_team": "Saint Louis"
+			"home_players":
+				{
+					"player1":"Markus Howard",
+					"player2":"Katin Reinhardt",
+					"player3":"Jajuan Johnson",
+					"player4":"Sam Hauser",
+					"player5":"Luke Fischer"
+				},
+			"away_team": "Saint Louis",
+			"away_players":
+				{
+					"player1":"Markus Howard",
+					"player2":"Katin Reinhardt",
+					"player3":"Jajuan Johnson",
+					"player4":"Sam Hauser",
+					"player5":"Luke Fischer"
+				}
 		},
 		{
 			"home_team": "UIC",
-			"away_team": "Toledo"
+			"home_players":
+				{
+					"player1":"Markus Howard",
+					"player2":"Katin Reinhardt",
+					"player3":"Jajuan Johnson",
+					"player4":"Sam Hauser",
+					"player5":"Luke Fischer"
+				},
+			"away_team": "Toledo",
+			"away_players":
+				{
+					"player1":"Markus Howard",
+					"player2":"Katin Reinhardt",
+					"player3":"Jajuan Johnson",
+					"player4":"Sam Hauser",
+					"player5":"Luke Fischer"
+				}
 		}
 	]
 }
