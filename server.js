@@ -92,6 +92,8 @@ function generateGames() {
         gamesObject[i].period = 1;
         gamesObject[i].home_play_log = [];
         gamesObject[i].away_play_log = [];
+        gamesObject[i].score_diff = [];
+        
         //console.log("game: " + JSON.stringify(gamesObject[i]));
         //console.log("i1: " + i);
         (function(i){
@@ -119,6 +121,15 @@ function gameTick (gameObj, i) {
     
     gameObj.home_score += home_score_add;
     gameObj.away_score += away_score_add;
+
+    console.log("Math.abs(gameObj.home_score - gameObj.away_score): " + Math.abs(gameObj.home_score - gameObj.away_score));
+
+    var tempScoreDiff = Math.abs(gameObj.home_score - gameObj.away_score);
+    if (tempScoreDiff > 8) {
+        tempScoreDiff = 8;
+    }
+
+    gameObj.score_diff.push(tempScoreDiff);
     
     if (gameObj.clock_sec === 0) {
         gameObj.clock_sec = 30;
@@ -126,21 +137,9 @@ function gameTick (gameObj, i) {
         gameObj.clock_sec = 0;
         gameObj.clock_min += 1;
     }
-    //console.log("home team: " + gameObj.home_team);
-    //console.log("away team: " + gameObj.away_team);
-    //console.log("home score: " + gameObj.home_score);
-    //console.log("away score: " + gameObj.away_score);
-    //console.log("minutes: " + gameObj.clock_min);
-    //console.log("seconds: " + gameObj.clock_sec);
-    //console.log("period: " + gameObj.period);
-    
-    //gameObj.play_log.push({play:"3pt shot"});
 
-    //console.log("gameObj.play_log: " + gameObj.play_log[0].play);
     gameObj.home_play_log.push({play:gameObj.home_players["player"+random_home_player] + " " + playGenerator(home_score_add)});
     gameObj.away_play_log.push({play:gameObj.away_players["player"+random_away_player] + " " + playGenerator(away_score_add)});
-
-    //console.log("home play: " + gameObj.home_play_log[gameObj.home_play_log.length-1].play);
     
     gameData[i] = gameObj;
 
@@ -156,6 +155,7 @@ function gameTick (gameObj, i) {
         gameObj.period = 1;
         gameObj.home_play_log = [];
         gameObj.away_play_log = [];
+        gameObj.score_diff = [];
         setTimeout(function(){
             gameTick(gameObj);
         },3000);

@@ -1,7 +1,9 @@
 {
 	"games": [
 		{
+			"game_id": "1001",
 			"home_team": "Marquette",
+			"home_asset_name": "marquette",
 			"home_players":
 			{
 				"player1":"Markus Howard",
@@ -11,6 +13,7 @@
 				"player5":"Luke Fischer"
 			},
 			"away_team": "DePaul",
+			"away_asset_name": "depaul",
 			"away_players":
 			{
 				"player1":"Billy Garrett",
@@ -21,7 +24,9 @@
 			}
 		},
 		{
+			"game_id": "1002",
 			"home_team": "Georgetown",
+			"home_asset_name": "georgetown",
 			"home_players":
 				{
 					"player1":"Markus Howard",
@@ -32,6 +37,7 @@
 				}
 			,
 			"away_team": "Villanova",
+			"away_asset_name": "villanova",
 			"away_players":
 				{
 					"player1":"Billy Garrett",
@@ -42,7 +48,9 @@
 				}
 		},
 		{
+			"game_id": "1003",
 			"home_team": "Butler",
+			"home_asset_name": "butler",
 			"home_players":
 				{
 					"player1":"Markus Howard",
@@ -53,6 +61,7 @@
 				}
 			,
 			"away_team": "Creighton",
+			"away_asset_name": "creighton",
 			"away_players":
 				{
 					"player1":"Billy Garrett",
@@ -63,7 +72,9 @@
 				}
 		},
 		{
+			"game_id": "1004",
 			"home_team": "Xavier",
+			"home_asset_name": "xavier",
 			"home_players":
 				{
 					"player1":"Markus Howard",
@@ -74,6 +85,7 @@
 				}
 			,
 			"away_team": "Dayton",
+			"away_asset_name": "dayton",
 			"away_players":
 				{
 					"player1":"Billy Garrett",
@@ -84,7 +96,9 @@
 				}
 		},
 		{
+			"game_id": "1005",
 			"home_team": "Ball State",
+			"home_asset_name": "ballstate",
 			"home_players":
 				{
 					"player1":"Markus Howard",
@@ -95,6 +109,7 @@
 				}
 			,
 			"away_team": "Charlotte",
+			"away_asset_name": "charlotte",
 			"away_players":
 				{
 					"player1":"Billy Garrett",
@@ -105,7 +120,9 @@
 				}
 		},
 		{
+			"game_id": "1006",
 			"home_team": "Illinois",
+			"home_asset_name": "illinois",
 			"home_players":
 				{
 					"player1":"Markus Howard",
@@ -115,6 +132,7 @@
 					"player5":"Luke Fischer"
 				},
 			"away_team": "Cincinnati",
+			"away_asset_name": "cincinnati",
 			"away_players":
 				{
 					"player1":"Billy Garrett",
@@ -125,7 +143,9 @@
 				}
 		},
 		{
+			"game_id": "1007",
 			"home_team": "Seton Hall",
+			"home_asset_name": "setonhall",
 			"home_players":
 				{
 					"player1":"Markus Howard",
@@ -135,6 +155,7 @@
 					"player5":"Luke Fischer"
 				},
 			"away_team": "Providence",
+			"away_asset_name": "providence",
 			"away_players":
 				{
 					"player1":"Markus Howard",
@@ -145,7 +166,9 @@
 				}
 		},
 		{
+			"game_id": "1008",
 			"home_team": "St. Johns",
+			"home_asset_name": "stjohns",
 			"home_players":
 				{
 					"player1":"Markus Howard",
@@ -155,6 +178,7 @@
 					"player5":"Luke Fischer"
 				},
 			"away_team": "Saint Louis",
+			"away_asset_name": "saintlouis",
 			"away_players":
 				{
 					"player1":"Markus Howard",
@@ -165,7 +189,9 @@
 				}
 		},
 		{
+			"game_id": "1009",
 			"home_team": "UIC",
+			"home_asset_name": "uic",
 			"home_players":
 				{
 					"player1":"Markus Howard",
@@ -175,6 +201,7 @@
 					"player5":"Luke Fischer"
 				},
 			"away_team": "Toledo",
+			"away_asset_name": "toledo",
 			"away_players":
 				{
 					"player1":"Markus Howard",
